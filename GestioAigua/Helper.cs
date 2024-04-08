@@ -18,7 +18,7 @@ namespace GestioAigua
 
             var records = new List<Dictionary<string, string>>();
 
-            using (var reader = new StreamReader("Consum_d_aigua_a_Catalunya_per_comarques_20240402.csv"))
+            using (var reader = new StreamReader("../../../Consum_d_aigua_a_Catalunya_per_comarques_20240402.csv"))
             using (var csv = new CsvReader(reader, System.Globalization.CultureInfo.InvariantCulture))
             {
                 csv.Read();
